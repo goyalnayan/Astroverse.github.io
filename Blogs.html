@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.974);
+            border-radius: 30px;
+            margin: 14px -16px;
+            width: 1510px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+            padding-top: 5px;
+        }
+
+        .navbar li a {
+            padding: 4px 4px;
+            text-decoration: none;
+            color: rgb(166, 36, 241);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 18px;
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(12, 11, 11);
+            color: white;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 10px;
+        }
+
+        .navbar input {
+            border-radius: 15px;
+            padding: 6px 15px;
+            width: 150px;
+        }
+
+        .right {
+            position: absolute;
+            right: 145px;
+            top: 16px;
+        }
+
+        .social li a {
+            color: white;
+            font-family: Georgia;
+        }
+
+        .social li a:hover {
+            color: rgb(24, 54, 246);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: 2px 15px;
+            width: 1490px;
+        }
+
+        .top {
+            background-color: rgb(0, 0, 0);
+            margin: -15px 7px;
+            padding: 8px 30px;
+            width: 1500px;
+            border-radius: 20px;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 60px;
+            filter: invert();
+        }
+
+        h3 {
+            background-color: rgb(0, 0, 0);
+            color: rgb(166, 36, 241);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+
+        .box {
+            border: 1px solid rgb(164, 164, 164);
+            ;
+            background-color: #ffffff;
+            margin: 2px auto;
+            padding: 30px 34px;
+            width: 33%;
+            box-sizing: border-box;
+            display: inline-block;
+            font-family: sans-serif;
+        }
+
+        .container {
+            padding: 1px;
+            width: 1488px;
+            background-color: rgb(255, 255, 255);
+            font-family: cursive;
+            margin: 16px 12px;
+        }
+
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(15, 15, 15);
+        }
+
+        a:hover {
+            color: rgb(16, 15, 15);
+            background-color: rgb(166, 36, 241);
+        }
+
+        a:visited {
+            color: rgb(166, 36, 241);
+        }
+
+        a:active {
+            background-color: rgb(212, 0, 255)
+        }
+
+        .btn {
+            font-family: sans-serif;
+            font-weight: bold;
+            background-color: rgb(10, 10, 10);
+            color: rgb(166, 36, 241);
+            padding: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 2px solid rgb(30, 0, 128);
+        }
+
+        .btn:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(250, 241, 228);
+            border: 2px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Astroverse.html">Astroverse</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+                <div class="right">
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/nayangoyal28/" target="_blank">Linkedin</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </nav> <!-- nav.navbar -->
+    </header>
+
+
+    <header class="top">
+        <!-- <img src="https://www.codewithharry.com/img/logo-blue.png" alt=""> -->
+        <img src="Image/r.png" alt="">
+        <h3 style="color:aqua">Welcome to Nayan's Astroverse Blogs</h3>
+    </header> <!-- header.top -->
+
+
+
+    <!-- This is display inline block -->
+    <div class="container">
+        <div class="box">
+            <h2 class="heading">Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus delectus, nostrum, obcaecati non
+                minima molestiae ipsam consequuntur deleniti possimus expedita minus ipsum? Rem enim iure similique,
+                illum cum fuga fugiat minima. Adipisci dignissimos rem rerum odio! Eius in fugiat aspernatur fuga, amet
+                nobis laboriosam.</p>
+            <a href="https://google.com" class="btn">Read more</a>
+        </div>
+
+        <div class="box">
+            <h2 class="heading">Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus delectus, nostrum, obcaecati non
+                minima molestiae ipsam consequuntur deleniti possimus expedita minus ipsum? Rem enim iure similique,
+                illum cum fuga fugiat minima. Adipisci dignissimos rem rerum odio! Eius in fugiat aspernatur fuga, amet
+                nobis laboriosam.</p>
+            <a href="https://google.com" class="btn">Read more</a>
+        </div>
+
+        <div class="box">
+            <h2 class="heading">Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus delectus, nostrum, obcaecati non
+                minima molestiae ipsam consequuntur deleniti possimus expedita minus ipsum? Rem enim iure similique,
+                illum cum fuga fugiat minima. Adipisci dignissimos rem rerum odio! Eius in fugiat aspernatur fuga, amet
+                nobis laboriosam.</p>
+            <a href="https://google.com" class="btn">Read more</a>
+        </div>
+        <div class="box">
+            <h2 class="heading">Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus delectus, nostrum, obcaecati non
+                minima molestiae ipsam consequuntur deleniti possimus expedita minus ipsum? Rem enim iure similique,
+                illum cum fuga fugiat minima. Adipisci dignissimos rem rerum odio! Eius in fugiat aspernatur fuga, amet
+                nobis laboriosam.</p>
+            <a href="https://google.com" class="btn">Read more</a>
+        </div>
+
+        <div class="box">
+            <h2 class="heading">Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus delectus, nostrum, obcaecati non
+                minima molestiae ipsam consequuntur deleniti possimus expedita minus ipsum? Rem enim iure similique,
+                illum cum fuga fugiat minima. Adipisci dignissimos rem rerum odio! Eius in fugiat aspernatur fuga, amet
+                nobis laboriosam.</p>
+            <a href="https://google.com" class="btn">Read more</a>
+        </div>
+
+        <div class="box">
+            <h2 class="heading">Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus delectus, nostrum, obcaecati non
+                minima molestiae ipsam consequuntur deleniti possimus expedita minus ipsum? Rem enim iure similique,
+                illum cum fuga fugiat minima. Adipisci dignissimos rem rerum odio! Eius in fugiat aspernatur fuga, amet
+                nobis laboriosam.</p>
+            <a href="https://google.com" class="btn">Read more</a>
+        </div>
+    </div>
+</body>
+
+</html>
